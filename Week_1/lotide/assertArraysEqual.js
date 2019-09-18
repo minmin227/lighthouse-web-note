@@ -9,18 +9,21 @@ const assertEqual = function(actual, expected) {
 
 const eqArrays = function (array1, array2) {
   let x = false; 
-  if (array1.length !== array2.length) return false;
-  for (i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]){
-      x = false;
-      break; 
+  if (array1.length !== array2.length){
+    x = false;
+  } else {
+    for (i = 0; i < array1.length; i++) {
+      if (array1[i] !== array2[i]){
+        x = false;
+        break; 
+      }
+      else{
+        x = true; 
+      }
     }
-    else{
-      x = true; 
-    }
-  } 
+  };
 
-  if(x){
+  if(x == 1){
     console.log(`Assertion Passed: ${[array1]} === ${[array2]}`)
   } else {
     console.log(`Assertion Failed: ${[array1]} !== ${[array2]}`)
@@ -28,3 +31,4 @@ const eqArrays = function (array1, array2) {
 };
 
 eqArrays([1, 2, 3], [1, 2, '3']);
+eqArrays([1, 2, 3], [1, 2, 3]);
