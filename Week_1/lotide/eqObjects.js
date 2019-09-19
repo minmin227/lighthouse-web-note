@@ -22,10 +22,8 @@ const eqObjects = function(object1, object2) {
         console.log(array2);
         return false;
       } 
-    }
+    } 
     else if (object1[key] !== object2[key]) {
-      console.log(object1[key]);
-      console.log(object2[key]);
       return false;
     }
   } return true;
