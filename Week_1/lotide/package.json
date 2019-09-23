@@ -1,0 +1,14 @@
+{
+  "name": "@minmin227/lotide",
+  "version": "1.0.1",
+  "description": "this is a small clone version of Lodash for head, tail, middle",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "minmin227 <peps.minhnguyen@gmail.com>",
+  "license": "1.0.0"
+}
