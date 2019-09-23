@@ -1,5 +1,5 @@
 function findKey (data, callback) {
-  for (key in data) {
+  for (let key in data) {
     if(callback(data[key])) {
       return key;
     }
