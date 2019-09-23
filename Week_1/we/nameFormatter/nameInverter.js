@@ -3,4 +3,4 @@ const nameInverter = function(name) {
 }
 console.log(nameInverter("Khurram Virani" ));
 
-module.exports = nameInverter;
+module.exports =  nameInverter;
